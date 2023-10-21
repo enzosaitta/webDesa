@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Outfit", sans-serif;
+  margin: 0;
+  background-color: #13171c;
+}
+.portafolio-cont {
+  background-image: url("/assets/image/fondo.png");
+  display: grid;
+  padding: 40px;
+  gap: 40px;
+}
+@media (min-width: 790px) {
+  .portafolio-cont {
+    padding: 0 80px;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-content: center;
+    height: 100vh;
+    gap: 20px;
+  }
+}
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  color: white;
+}
+
+.portfolio__title {
+  font-size: 60px;
+  text-align: center;
+  color: white;
+}
+@media (min-width: 790px) {
+  .portfolio__title {
+    font-size: 96px;
+    width: 586px;
+    height: 192px;
+    text-align: start;
+  }
+}
+.portfolio__img {
+  width: 219px;
+  height: 211px;
+}
+@media (min-width: 790px) {
+  .portfolio__img {
+    width: 292px;
+    height: 281px;
+  }
+}
+.portfolio-card-conteiner {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 790px) {
+  .portfolio-card-conteiner {
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+.portfolio-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #393e464b;
+  border-radius: 16px;
+  padding: 42px;
+  margin-bottom: 40px;
+}
+@media (min-width: 790px) {
+  .portfolio-card {
+    min-height: 550px;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+.portfolio-card__title {
+  font-weight: 700;
+  text-align: center;
+  font-size: 33px;
+}
+.text__portfolio {
+  font-size: 16px;
+}
+@media (min-width: 790px) {
+  .text__portfolio {
+    width: 350px;
+    height: 130px;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0;
+  }
+}
+
+.portfolio-conteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title__special {
+  color: #da4167;
+}
+
+.img-card {
+  width: 100%;
+}
